@@ -1,0 +1,23 @@
+const { mergeTimeRanges } = require('./main');
+const range1 = [
+  [1000, 2000],
+  [2500, 4000],
+  [3900, 4100],
+  [8000, 9000],
+  [9050, 9500]
+];
+console.log(mergeTimeRanges(range1,200));
+const range2 = [
+  [0, 10],
+  [15, 20],
+  [25, 30]
+];
+console.log(mergeTimeRanges(range2,4));
+const range3 = [
+  [0, 10],
+  [12, 15],
+  [17, 25],
+  [27, 35]
+];
+console.log(mergeTimeRanges(range3,3));
+
